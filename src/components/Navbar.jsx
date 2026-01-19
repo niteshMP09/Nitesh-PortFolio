@@ -31,6 +31,14 @@ const Navbar = () => {
           <a onClick={() => scrollToSection('projects')} className="nav-link">Projects</a>
           <a onClick={() => scrollToSection('experience')} className="nav-link">Experience</a>
           <a onClick={() => scrollToSection('contact')} className="nav-link">Contact</a>
+          <button
+              onClick={() =>
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+              }
+              className="btn btn-primary"
+            >
+              Get In Touch
+            </button>
         </div>
 
         <div className="nav-toggle" onClick={toggleMenu}>
