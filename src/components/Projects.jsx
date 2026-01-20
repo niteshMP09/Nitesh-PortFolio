@@ -1,5 +1,4 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import './Projects.css'
 
 const Projects = () => {
   const projectsData = [
@@ -42,27 +41,27 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="projects">
-      <div className="section-container">
-        <h2 className="section-title">Projects</h2>
-        <p className="section-subtitle">
+    <section id="projects" className="bg-slate-800 py-20">
+      <div className="max-w-[1200px] mx-auto px-5 py-20">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Projects</h2>
+        <p className="text-center text-slate-300 text-lg mb-12">
           Some of my recent work
         </p>
 
-        <div className="projects-grid">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projectsData.map((project, index) => (
-            <div key={index} className="project-card">
-              <div className="project-image">
-                <img src={project.image} alt={project.title} className="project-placeholder" />
+            <div key={index} className="bg-slate-900 rounded-xl overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
+              <div className="h-48 overflow-hidden">
+                <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
               </div>
 
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-slate-100 mb-3">{project.title}</h3>
+                <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
 
-                <div className="project-technologies">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="tech-tag">{tech}</span>
+                    <span key={i} className="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">{tech}</span>
                   ))}
                 </div>
 

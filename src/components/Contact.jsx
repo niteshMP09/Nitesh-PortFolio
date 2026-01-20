@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import emailjs from '@emailjs/browser'
-import './Contact.css'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,50 +50,50 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="contact">
-      <div className="section-container">
-        <h2 className="section-title">Get In Touch</h2>
-        <p className="section-subtitle">
+    <section id="contact" className="bg-slate-800 py-20">
+      <div className="max-w-[1200px] mx-auto px-5 py-20">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Get In Touch</h2>
+        <p className="text-center text-slate-300 text-lg mb-12">
           Open to Full-Time roles, freelance work, and collaboration opportunities
         </p>
 
-        <div className="contact-content">
-          <div className="contact-info">
-            <h3 className="contact-info-title">Contact Information</h3>
-            <p className="contact-info-text">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-bold text-slate-100 mb-4">Contact Information</h3>
+            <p className="text-slate-300 mb-6 leading-relaxed">
               If you have an opportunity in React / Next.js / Full Stack development,
               feel free to reach out. I usually respond within 24 hours.
             </p>
 
-            <div className="contact-items">
-              <div className="contact-item">
-                <FaEnvelope className="contact-icon" />
+            <div className="space-y-6">
+              <div className="flex items-start gap-4 bg-slate-900 p-4 rounded-lg">
+                <FaEnvelope className="text-2xl text-indigo-400 mt-1" />
                 <div>
-                  <h4>Email</h4>
-                  <p>niteshsikarwar4898@gmail.com</p>
+                  <h4 className="font-semibold text-slate-100 mb-1">Email</h4>
+                  <p className="text-slate-300">niteshsikarwar4898@gmail.com</p>
                 </div>
               </div>
 
-              <div className="contact-item">
-                <FaPhone className="contact-icon" />
+              <div className="flex items-start gap-4 bg-slate-900 p-4 rounded-lg">
+                <FaPhone className="text-2xl text-indigo-400 mt-1" />
                 <div>
-                  <h4>Phone</h4>
-                  <p>+91 8109530681</p>
+                  <h4 className="font-semibold text-slate-100 mb-1">Phone</h4>
+                  <p className="text-slate-300">+91 8109530681</p>
                 </div>
               </div>
 
-              <div className="contact-item">
-                <FaMapMarkerAlt className="contact-icon" />
+              <div className="flex items-start gap-4 bg-slate-900 p-4 rounded-lg">
+                <FaMapMarkerAlt className="text-2xl text-indigo-400 mt-1" />
                 <div>
-                  <h4>Location</h4>
-                  <p>Indore, Madhya Pradesh, India</p>
+                  <h4 className="font-semibold text-slate-100 mb-1">Location</h4>
+                  <p className="text-slate-300">Indore, Madhya Pradesh, India</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <form className="contact-form" onSubmit={handleSubmit}>
-            <div className="form-group">
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            <div>
               <input
                 type="text"
                 name="name"
@@ -102,11 +101,11 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="form-input"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
               />
             </div>
 
-            <div className="form-group">
+            <div>
               <input
                 type="email"
                 name="email"
@@ -114,11 +113,11 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="form-input"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
               />
             </div>
 
-            <div className="form-group">
+            <div>
               <input
                 type="text"
                 name="subject"
@@ -126,11 +125,11 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 required
-                className="form-input"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"
               />
             </div>
 
-            <div className="form-group">
+            <div>
               <textarea
                 name="message"
                 placeholder="Your Message"
@@ -138,15 +137,15 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 rows="5"
-                className="form-input form-textarea"
+                className="w-full px-4 py-3 bg-slate-900 border border-slate-700 rounded-lg text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors resize-none"
               ></textarea>
             </div>
 
-            <button type="submit" className="submit-btn" disabled={isLoading}>
+            <button type="submit" className="w-full px-8 py-3 rounded-lg font-semibold gradient-bg text-white shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed" disabled={isLoading}>
               <FaPaperPlane /> {isLoading ? 'Sending...' : 'Send Message'}
             </button>
             {statusMessage && (
-              <p className={`status-message ${statusMessage.includes('✅') ? 'success' : 'error'}`}>
+              <p className={`text-center ${statusMessage.includes('✅') ? 'text-green-400' : 'text-red-400'}`}>
                 {statusMessage}
               </p>
             )}

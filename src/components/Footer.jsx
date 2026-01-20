@@ -1,16 +1,15 @@
 import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from "react-icons/fa";
-import "./Footer.css";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h3 className="footer-title">Nitesh Sikarwar</h3>
-            <p className="footer-text">
+    <footer className="bg-slate-900 py-12 border-t border-slate-800">
+      <div className="max-w-[1200px] mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h3 className="text-2xl font-bold gradient-text mb-4">Nitesh Sikarwar</h3>
+            <p className="text-slate-400 leading-relaxed">
               Full Stack Developer with strong expertise in React, Next.js, and
               TypeScript, focused on building scalable, high-performance web
               applications that deliver real business value. I enjoy creating
@@ -33,38 +32,38 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="footer-section">
-            <h4 className="footer-heading">Quick Links</h4>
-            <ul className="footer-links">
+          <div>
+            <h4 className="text-lg font-semibold text-slate-100 mb-4">Quick Links</h4>
+            <ul className="space-y-2 text-slate-400">
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" className="hover:text-indigo-400 transition-colors">Home</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" className="hover:text-indigo-400 transition-colors">About</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" className="hover:text-indigo-400 transition-colors">Skills</a>
               </li>
               <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" className="hover:text-indigo-400 transition-colors">Experience</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" className="hover:text-indigo-400 transition-colors">Projects</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact" className="hover:text-indigo-400 transition-colors">Contact</a>
               </li>
             </ul>
           </div>
 
-          <div className="footer-section">
-            <h4 className="footer-heading">Connect</h4>
-            <div className="footer-social">
+          <div>
+            <h4 className="text-lg font-semibold text-slate-100 mb-4">Connect</h4>
+            <div className="flex gap-4">
               <a
                 href="https://github.com/niteshMP09"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-link"
+                className="text-2xl text-slate-300 hover:text-indigo-400 hover:scale-110 transition-all"
               >
                 <FaGithub />
               </a>
@@ -72,7 +71,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/nitesh-sikarwar-a3b0561a0/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="footer-social-link"
+                className="text-2xl text-slate-300 hover:text-indigo-400 hover:scale-110 transition-all"
               >
                 <FaLinkedin />
               </a>
@@ -80,9 +79,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">
-          <p>
-            © {currentYear} Nitesh Sikarwar <FaHeart className="heart-icon" />
+        <div className="text-center text-slate-400 pt-8 border-t border-slate-800">
+          <p className="flex items-center justify-center gap-1">
+            © {currentYear} Nitesh Sikarwar <FaHeart className="text-red-500" />
           </p>
         </div>
       </div>

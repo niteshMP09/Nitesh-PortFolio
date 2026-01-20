@@ -1,5 +1,4 @@
 import { FaBriefcase } from 'react-icons/fa'
-import './Experience.css'
 
 const Experience = () => {
   const experienceData = [
@@ -36,29 +35,30 @@ const Experience = () => {
   ]
 
   return (
-    <section id="experience" className="experience">
-      <div className="section-container">
-        <h2 className="section-title">Work Experience</h2>
-        <p className="section-subtitle">
+    <section id="experience" className="bg-slate-900 py-20">
+      <div className="max-w-[1200px] mx-auto px-5 py-20">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Work Experience</h2>
+        <p className="text-center text-slate-300 text-lg mb-12">
           My professional journey
         </p>
 
-        <div className="timeline">
+        <div className="relative">
           {experienceData.map((exp, index) => (
-            <div key={index} className="timeline-item">
-              <div className="timeline-icon">
+            <div key={index} className="relative pl-12 pb-12 last:pb-0">
+              <div className="absolute left-0 top-0 w-10 h-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white">
                 <FaBriefcase />
               </div>
+              <div className="absolute left-5 top-10 bottom-0 w-0.5 bg-slate-700 last:hidden"></div>
 
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3 className="timeline-title">{exp.title}</h3>
-                  <span className="timeline-period">{exp.period}</span>
+              <div className="bg-slate-800 p-6 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
+                <div className="flex flex-wrap justify-between items-start mb-2">
+                  <h3 className="text-2xl font-bold text-slate-100">{exp.title}</h3>
+                  <span className="text-sm text-indigo-400 font-medium">{exp.period}</span>
                 </div>
 
-                <h4 className="timeline-company">{exp.company}</h4>
+                <h4 className="text-lg text-slate-300 mb-4">{exp.company}</h4>
 
-                <ul className="timeline-description">
+                <ul className="space-y-2 text-slate-400 list-disc list-inside">
                   {exp.description.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}

@@ -1,6 +1,5 @@
 import { FaReact, FaNodeJs, FaDatabase, FaGitAlt, FaDocker, FaAws } from 'react-icons/fa'
 import { SiJavascript, SiTypescript, SiMongodb, SiPostgresql, SiTailwindcss, SiExpress, SiNextdotjs, SiGraphql, SiRedux, SiJest } from 'react-icons/si'
-import './Skills.css'
 
 const Skills = () => {
   const skillsData = [
@@ -23,27 +22,27 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="skills">
-      <div className="section-container">
-        <h2 className="section-title">Skills & Technologies</h2>
-        <p className="section-subtitle">
+    <section id="skills" className="bg-slate-900 py-20">
+      <div className="max-w-[1200px] mx-auto px-5 py-20">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Skills & Technologies</h2>
+        <p className="text-center text-slate-300 text-lg mb-12">
           Technologies I use to build scalable, high-performance web applications
         </p>
 
-        <div className="skills-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {skillsData.map((skill, index) => (
-            <div key={index} className="skill-card">
-              <div className="skill-icon">{skill.icon}</div>
-              <h3 className="skill-name">{skill.name}</h3>
+            <div key={index} className="bg-slate-800 p-6 rounded-xl transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
+              <div className="text-5xl text-indigo-400 mb-4">{skill.icon}</div>
+              <h3 className="text-lg font-semibold text-slate-100 mb-3">{skill.name}</h3>
 
-              <div className="skill-bar">
+              <div className="w-full bg-slate-700 rounded-full h-2 mb-2 overflow-hidden">
                 <div
-                  className="skill-progress"
+                  className="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 transition-all duration-500"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
 
-              <span className="skill-level">{skill.level}%</span>
+              <span className="text-sm text-slate-400">{skill.level}%</span>
             </div>
           ))}
         </div>

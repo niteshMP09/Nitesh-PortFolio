@@ -1,5 +1,3 @@
-import './CloudAnimation.css'
-
 const CloudAnimation = () => {
   // Generate 50 snowflakes with random properties
   const snowflakes = Array.from({ length: 50 }, (_, i) => ({
@@ -12,11 +10,11 @@ const CloudAnimation = () => {
   }))
 
   return (
-    <div className="snowfall-container">
+    <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {snowflakes.map((flake) => (
         <div
           key={flake.id}
-          className="snowflake"
+          className="absolute top-[-10px] bg-white rounded-full animate-[fall_linear_infinite]"
           style={{
             left: `${flake.left}%`,
             animationDuration: `${flake.animationDuration}s`,

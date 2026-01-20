@@ -8,11 +8,10 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import CloudAnimation from './components/CloudAnimation'
-import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="relative">
       <CloudAnimation />
       <Navbar />
       <Hero />
