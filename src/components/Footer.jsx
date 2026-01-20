@@ -42,7 +42,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            © {currentYear} Nitesh Sikarwar. Made with <FaHeart className="heart-icon" /> using React & Next.js
+            © {currentYear} Nitesh Sikarwar <FaHeart className="heart-icon" />
           </p>
         </div>
       </div>
