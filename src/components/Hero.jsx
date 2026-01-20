@@ -12,10 +12,10 @@ const Hero = () => {
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
             Hi, I'm <span className="gradient-text">Nitesh Sikarwar</span>
           </h1>
-          <h2 className="text-3xl text-slate-300 mb-6 font-semibold">
+          <h2 className="text-3xl text-white mb-6 font-semibold">
             Full Stack Developer (React • Next.js • Node.js)
           </h2>
-          <p className="text-slate-400 text-lg leading-relaxed mb-8">
+          <p className="text-white text-lg leading-relaxed mb-8">
             Full Stack Developer with 4+ years of experience building scalable web applications using
             React.js, Next.js, TypeScript, Node.js, and GraphQL. I focus on performance, clean UI
             architecture, and delivering responsive, accessible user experiences.
