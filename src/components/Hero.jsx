@@ -26,7 +26,7 @@ const Hero = () => {
               onClick={() =>
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
               }
-              className="px-4 py-2 rounded-lg font-semibold gradient-bg text-white shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60"
+              className="w-full md:w-auto px-4 py-2 rounded-lg font-semibold gradient-bg text-white shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60"
             >
               Get In Touch
             </button>
@@ -34,7 +34,7 @@ const Hero = () => {
             <a
               href={resume}
               download="Nitesh_Sikarwar_Resume.pdf"
-              className="px-4 py-2 rounded-lg font-semibold bg-transparent text-slate-100 border-2 border-indigo-500 shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:bg-indigo-500 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60 hover:scale-105 flex items-center gap-2"
+              className="w-full md:w-auto px-4 py-2 rounded-lg font-semibold bg-transparent text-slate-100 border-2 border-indigo-500 shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:bg-indigo-500 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60 hover:scale-105 flex items-center justify-center gap-2"
             >
               <FaDownload /> Download Resume
             </a>
@@ -43,7 +43,7 @@ const Hero = () => {
               onClick={() =>
                 document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
               }
-              className="px-4 py-2 rounded-lg font-semibold bg-transparent text-slate-100 border-2 border-indigo-500 shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:bg-indigo-500 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60 hover:scale-105"
+              className="w-full md:w-auto px-4 py-2 rounded-lg font-semibold bg-transparent text-slate-100 border-2 border-indigo-500 shadow-lg shadow-indigo-500/40 transition-all duration-300 hover:bg-indigo-500 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-indigo-500/60 hover:scale-105"
             >
               View Projects
             </button>
