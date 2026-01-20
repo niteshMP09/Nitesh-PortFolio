@@ -1,5 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaDownload } from 'react-icons/fa'
 import profileImage from '../assets/MyImage.png'
+import resume from '../assets/Nitesh_CV.pdf'
 
 const Hero = () => {
   return (
@@ -29,6 +30,14 @@ const Hero = () => {
             >
               Get In Touch
             </button>
+
+            <a
+              href={resume}
+              download="Nitesh_Sikarwar_Resume.pdf"
+              className="px-8 py-3 rounded-lg font-semibold bg-transparent text-slate-100 border-2 border-indigo-500 transition-all duration-300 hover:bg-indigo-500 hover:-translate-y-0.5 flex items-center gap-2"
+            >
+              <FaDownload /> Download Resume
+            </a>
 
             <button
               onClick={() =>
