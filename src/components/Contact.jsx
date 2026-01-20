@@ -53,7 +53,7 @@ const Contact = () => {
     <section id="contact" className="bg-slate-800 py-20">
       <div className="max-w-[1200px] mx-auto px-5 py-20">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Get In Touch</h2>
-        <p className="text-center text-slate-300 text-lg mb-12">
+        <p className="text-center text-white text-lg mb-12">
           Open to Full-Time roles, freelance work, and collaboration opportunities
         </p>
 

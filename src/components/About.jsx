@@ -4,7 +4,7 @@ const About = () => {
       <div className="max-w-[1200px] mx-auto px-5 py-20">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">About Me</h2>
         <div className="about-content">
-          <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
+          <div className="space-y-6 text-white text-lg leading-relaxed">
             <p>
               I'm a Full Stack Developer with 4+ years of experience building modern web
               applications using JavaScript, TypeScript, React.js, Next.js, Node.js, Express.js,
@@ -27,15 +27,15 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-slate-900 p-8 rounded-xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
               <h3 className="text-5xl font-bold gradient-text mb-2">4+</h3>
-              <p className="text-slate-400">Years Experience</p>
+              <p className="text-white">Years Experience</p>
             </div>
             <div className="bg-slate-900 p-8 rounded-xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
               <h3 className="text-5xl font-bold gradient-text mb-2">50+</h3>
-              <p className="text-slate-400">Reusable Components Built</p>
+              <p className="text-white">Reusable Components Built</p>
             </div>
             <div className="bg-slate-900 p-8 rounded-xl text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/20">
               <h3 className="text-5xl font-bold gradient-text mb-2">4+</h3>
-              <p className="text-slate-400">Major Projects Delivered</p>
+              <p className="text-white">Major Projects Delivered</p>
             </div>
           </div>
         </div>

@@ -44,7 +44,7 @@ const Projects = () => {
     <section id="projects" className="bg-slate-800 py-20">
       <div className="max-w-[1200px] mx-auto px-5 py-20">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 gradient-text">Projects</h2>
-        <p className="text-center text-slate-300 text-lg mb-12">
+        <p className="text-center text-white text-lg mb-12">
           Some of my recent work
         </p>
 
@@ -56,12 +56,12 @@ const Projects = () => {
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-slate-100 mb-3">{project.title}</h3>
-                <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
+                <h3 className="text-2xl font-bold gradient-text mb-3">{project.title}</h3>
+                <p className="text-white mb-4 leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech, i) => (
-                    <span key={i} className="px-3 py-1 bg-slate-800 text-indigo-400 rounded-full text-sm">{tech}</span>
+                    <span key={i} className="px-3 py-1 bg-slate-700 text-indigo-400 font-bold rounded-full text-sm">{tech}</span>
                   ))}
                 </div>
 
