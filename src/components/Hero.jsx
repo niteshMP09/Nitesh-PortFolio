@@ -64,8 +64,11 @@ const Hero = () => {
 
         <div className="flex justify-center items-center animate-[fadeIn_1s_ease-out] order-1 md:order-2">
           <div className="relative w-80 h-80 md:w-96 md:h-96">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-spin-slow"></div>
-            <div className="absolute inset-2 rounded-full bg-slate-900"></div>
+            {/* Rotating gradient border with conic gradient for visible rotation */}
+            <div className="absolute inset-0 rounded-full animate-spin-slow" style={{
+              background: 'conic-gradient(from 0deg, #6366f1, #8b5cf6, #ec4899, #6366f1, transparent, transparent)'
+            }}></div>
+            <div className="absolute inset-[3px] rounded-full bg-slate-900"></div>
             <img src={profileImage} alt="Nitesh Sikarwar" className="absolute inset-4 w-[calc(100%-2rem)] h-[calc(100%-2rem)] rounded-full object-cover shadow-2xl" />
           </div>
         </div>
