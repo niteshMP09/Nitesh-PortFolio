@@ -40,7 +40,7 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-4 mb-4 justify-center md:justify-start">
             <a href="https://github.com/niteshMP09" target="_blank" rel="noopener noreferrer" className="text-3xl text-slate-300 transition-all duration-300 hover:text-indigo-400 hover:scale-110">
               <FaGithub />
             </a>
