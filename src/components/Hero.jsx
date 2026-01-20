@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(99,102,241,0.1)_0%,transparent_50%),radial-gradient(circle_at_80%_80%,rgba(139,92,246,0.1)_0%,transparent_50%)] pointer-events-none"></div>
       
       <div className="max-w-[1200px] mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative z-10">
-        <div className="animate-[fadeInUp_1s_ease-out]">
+        <div className="animate-[fadeInUp_1s_ease-out] order-2 md:order-1">
           <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
             Hi, I'm <span className="gradient-text">Nitesh Sikarwar</span>
           </h1>
@@ -53,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center animate-[fadeIn_1s_ease-out]">
+        <div className="flex justify-center items-center animate-[fadeIn_1s_ease-out] order-1 md:order-2">
           <div className="relative w-80 h-80 md:w-96 md:h-96">
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-spin-slow"></div>
             <div className="absolute inset-2 rounded-full bg-slate-900"></div>
