@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-slate-100 mb-4">Connect</h4>
+            <h4 className="text-lg font-semibold text-slate-100 mb-4">Let's Connect</h4>
             <div className="flex gap-4">
               <a
                 href="https://github.com/niteshMP09"
